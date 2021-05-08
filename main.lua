@@ -1,39 +1,3 @@
-local l = game.Lighting
-
-local variaveis = {
-    ["ceu"] = true,
-    ["atmosfera"] = true,
-    ["bloom"] = true,
-    ["blur"] = true,
-    ["color_boost"] = true,
-    ["raios_de_sol"] = true,
-}
-
-local raios = {
-    ["intensidade"] = 0.25,
-    ["espalhar"] = 0.2, 
-}
-
-local atmosfera = {
-    ["densidade"] = 0.25,
-}
-
-local bloom = {
-    ["intensidade"] = 0.4,
-    ["magnitude"] = 0.95,
-    ["tamanho"] = 0.4,
-}
-
-local blur = {
-    ["tamanho"] = 0.4,
-}
-
-local color_boost = {
-    ["saturação"] = 0.2,
-    ["constrate"] = 0,
-    ["claridade"] = 0,
-}
-
 local function x(b)
 	for i,v in pairs(game.Lighting:GetDescendants()) do
 		if v:IsA(b) then
