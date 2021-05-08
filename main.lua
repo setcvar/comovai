@@ -42,16 +42,6 @@ local function x(b)
 	end
 end
 
-
-getgenv().s_atmosfera = variaveis.atmosfera
-getgenv().s_bloom = variaveis.bloom
-getgenv().s_blur = variaveis.blur
-getgenv().s_colorboost = variaveis.color_boost
-getgenv().s_ceu = variaveis.ceu
-getgenv().s_sunray = variaveis.raios_de_sol
-
-local function Main()
-	
 if s_atmosfera == true then
 	x("Atmosphere")
 	local a = Instance.new("Atmosphere")
@@ -96,17 +86,3 @@ if s_raios_de_sol then
 	n.Spread = raios.espalhar
 	n.Parent = l
 end
-end
-
-getgenv().ChangeEnv = function(c_env, value)
-	getgenv()[c_env] = value
-	print("NEW VALUE OF: "..getgenv()[c_enc].."\n"..value)
-	Main()
-end
-
-getgenv().ChangeBool = function(c_env, value)
-	variaveis[c_env] = value
-	Main()
-end
-
-Main()
