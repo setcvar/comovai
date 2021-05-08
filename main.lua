@@ -6,7 +6,14 @@ local function x(b)
 	end
 end
 
-	if variaveis.atmosfera == true then
+local s_atmosfera = variaveis.atmosfera
+local s_bloom = variaveis.bloom
+local s_blur = variaveis.blur
+local s_colorboost = variaveis.color_boost
+local s_ceu = variaveis.ceu
+local s_sunray = variaveis.raios_de_sol
+
+	if s_atmosfera == true then
 		--x("Atmosphere")
 		local a = Instance.new("Atmosphere")
 		a.Density = atmosfera.densidade
