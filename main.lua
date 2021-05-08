@@ -107,3 +107,5 @@ getgenv().ChangeBool = function(c_env, value)
 	variaveis[c_env] = value
 	Main()
 end
+
+Main()
