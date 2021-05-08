@@ -6,7 +6,6 @@ local function x(b)
 	end
 end
 
-function main()
 	if variaveis.atmosfera then
 		x("Atmosphere")
 		local a = Instance.new("Atmosphere")
@@ -55,5 +54,3 @@ function main()
 	end
 	
 end
-
-main()
