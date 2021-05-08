@@ -7,7 +7,7 @@ local function x(b)
 end
 
 	if variaveis.atmosfera == true then
-		x("Atmosphere")
+		--x("Atmosphere")
 		local a = Instance.new("Atmosphere")
 		a.Density = atmosfera.densidade
 		a.Parent = l
