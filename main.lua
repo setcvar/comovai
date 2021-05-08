@@ -100,6 +100,7 @@ end
 
 getgenv().ChangeEnv = function(c_env, value)
 	getgenv()[c_env] = value
+	print("NEW VALUE OF: "..getgenv()[c_enc].."\n"..value)
 	Main()
 end
 
