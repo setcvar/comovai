@@ -38,7 +38,7 @@ end
 		c.Parent = l
 	end
 	
-	if variaveis["céu"] then
+	if variaveis["ceu"] then
 		x("Sky")
 		local attain_heaven = Instance.new("Sky")
 		attain_heaven.Parent = l
