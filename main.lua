@@ -14,25 +14,18 @@ local raios = {
     ["espalhar"] = 0.2, 
 }
 
-local ceu = {
-    ["Parent"] = l
-}
-
 local atmosfera = {
     ["densidade"] = 0.25,
-    ["Parent"] = l,
 }
 
 local bloom = {
     ["intensidade"] = 0.4,
     ["magnitude"] = 0.95,
-    ["Parent"] = l,
     ["tamanho"] = 0.4,
 }
 
 local blur = {
     ["tamanho"] = 0.4,
-    ["Parent"] = l,
 }
 
 local color_boost = {
