@@ -14,10 +14,10 @@ local s_sunray = variaveis.raios_de_sol
 if s_atmosfera == true then
 	x("Atmosphere")
 	local a = Instance.new("Atmosphere")
-	a.Density = atmosfera.densidade
+	a.Density = s_atmosfera.densidade
 	a.Parent = l
 end
-	if variaveis.bloom then
+	if s_bloom then
 	x("BloomEffect")
 	local v = Instance.new("BloomEffect")
 	v.Intensity = bloom.intensidade
@@ -25,13 +25,13 @@ end
 	v.Size = bloom.tamanho
 	v.Parent =  l
 end	
-if variaveis.blur then
+if s_blur then
 	x("BlurEffect")
 	local b = Instance.new("BlurEffect")
 	b.Size = blur.tamanho
 	b.Parent = l
 end
-if variaveis.color_boost then
+if s_color_boost then
 	x("ColorCorrectionEffect")
 	local c = Instance.new("ColorCorrectionEffect")
 	c.Contrast = color_boost.constrate
@@ -39,12 +39,12 @@ if variaveis.color_boost then
 	c.Saturation = color_boost["saturação"]
 	c.Parent = l
 end
-if variaveis["ceu"] then
+if s_ceu then
 	x("Sky")
 	local attain_heaven = Instance.new("Sky")
 	attain_heaven.Parent = l
 end
-if variaveis.raios_de_sol then
+if s_raios_de_sol then
 	x("SunraysEffect")
 	local n = Instance.new("SunRaysEffect")
 	n.Intensity = raios.intensidade
