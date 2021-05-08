@@ -11,7 +11,7 @@ function main()
 		x("Atmosphere")
 		local a = Instance.new("Atmosphere")
 		a.Density = atmosfera.densidade
-		a.Parent = atmosfera.Parent	
+		a.Parent = l
 	end
 	
 	if variaveis.bloom then
@@ -20,14 +20,14 @@ function main()
 		v.Intensity = bloom.intensidade
 		v.Threshold = bloom.magnitude
 		v.Size = bloom.tamanho
-		v.Parent = bloom.Parent
+		v.Parent =  l
 	end	
 	
 	if variaveis.blur then
 		x("BlurEffect")
 		local b = Instance.new("BlurEffect")
 		b.Size = blur.tamanho
-		b.Parent = blur.Parent
+		b.Parent = l
 	end
 	
 	if variaveis.color_boost then
@@ -41,8 +41,8 @@ function main()
 	
 	if variaveis["céu"] then
 		x("Sky")
-		local d = Instance.new("Sky")
-		d.Parent = ceu.Parent
+		local attain_heaven = Instance.new("Sky")
+		attain_heaven.Parent = l
 		
 	end
 	
@@ -51,6 +51,7 @@ function main()
 		local n = Instance.new("SunRaysEffect")
 		n.Intensity = raios.intensidade
 		n.Spread = raios.espalhar
+		n.Parent = l
 	end
 	
 end
