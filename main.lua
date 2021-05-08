@@ -50,6 +50,8 @@ getgenv().s_colorboost = variaveis.color_boost
 getgenv().s_ceu = variaveis.ceu
 getgenv().s_sunray = variaveis.raios_de_sol
 
+local function Main()
+	
 if s_atmosfera == true then
 	x("Atmosphere")
 	local a = Instance.new("Atmosphere")
@@ -93,4 +95,15 @@ if s_raios_de_sol then
 	n.Intensity = raios.intensidade
 	n.Spread = raios.espalhar
 	n.Parent = l
+end
+end
+
+getgenv().ChangeEnv = function(c_env, value)
+	getgenv()[c_env] = value
+	Main()
+end
+
+getgenv().ChangeBool = function(c_env, value)
+	variaveis[c_env] = value
+	Main()
 end
