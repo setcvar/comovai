@@ -1,3 +1,39 @@
+local l = game.Lighting
+
+local variaveis = {
+    ["ceu"] = true,
+    ["atmosfera"] = true,
+    ["bloom"] = true,
+    ["blur"] = true,
+    ["color_boost"] = true,
+    ["raios_de_sol"] = true,
+}
+
+local raios = {
+    ["intensidade"] = 0.25,
+    ["espalhar"] = 0.2, 
+}
+
+local atmosfera = {
+    ["densidade"] = 0.25,
+}
+
+local bloom = {
+    ["intensidade"] = 0.4,
+    ["magnitude"] = 0.95,
+    ["tamanho"] = 0.4,
+}
+
+local blur = {
+    ["tamanho"] = 0.4,
+}
+
+local color_boost = {
+    ["saturação"] = 0.2,
+    ["constrate"] = 0,
+    ["claridade"] = 0,
+}
+
 local function x(b)
 	for i,v in pairs(game.Lighting:GetDescendants()) do
 		if v:IsA(b) then
@@ -5,12 +41,15 @@ local function x(b)
 		end
 	end
 end
-local s_atmosfera = variaveis.atmosfera
-local s_bloom = variaveis.bloom
-local s_blur = variaveis.blur
-local s_colorboost = variaveis.color_boost
-local s_ceu = variaveis.ceu
-local s_sunray = variaveis.raios_de_sol
+
+
+getgenv().s_atmosfera = variaveis.atmosfera
+getgenv().s_bloom = variaveis.bloom
+getgenv().s_blur = variaveis.blur
+getgenv().s_colorboost = variaveis.color_boost
+getgenv().s_ceu = variaveis.ceu
+getgenv().s_sunray = variaveis.raios_de_sol
+
 if s_atmosfera == true then
 	x("Atmosphere")
 	local a = Instance.new("Atmosphere")
@@ -25,12 +64,14 @@ end
 	v.Size = bloom.tamanho
 	v.Parent =  l
 end	
+
 if s_blur then
 	x("BlurEffect")
 	local b = Instance.new("BlurEffect")
 	b.Size = blur.tamanho
 	b.Parent = l
 end
+
 if s_color_boost then
 	x("ColorCorrectionEffect")
 	local c = Instance.new("ColorCorrectionEffect")
@@ -39,11 +80,13 @@ if s_color_boost then
 	c.Saturation = color_boost["saturação"]
 	c.Parent = l
 end
+
 if s_ceu then
 	x("Sky")
 	local attain_heaven = Instance.new("Sky")
 	attain_heaven.Parent = l
 end
+
 if s_raios_de_sol then
 	x("SunraysEffect")
 	local n = Instance.new("SunRaysEffect")
