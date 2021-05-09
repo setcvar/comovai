@@ -1,39 +1,38 @@
 local l = game.Lighting
 
 local variaveis = {
-    ["ceu"] = true,
-    ["atmosfera"] = true,
-    ["bloom"] = true,
-    ["blur"] = true,
-    ["color_boost"] = true,
-    ["raios_de_sol"] = true,
+	["ceu"] = true,
+	["atmosfera"] = true,
+	["bloom"] = true,
+	["blur"] = true,
+	["color_boost"] = true,
+	["raios_de_sol"] = true,
 }
 
 local raios = {
-    ["intensidade"] = 0.25,
-    ["espalhar"] = 0.2, 
+	["intensidade"] = 0.25,
+	["espalhar"] = 0.2, 
 }
 
 local atmosfera = {
-    ["densidade"] = 0.25,
+	["densidade"] = 0.25,
 }
 
 local bloom = {
-    ["intensidade"] = 0.4,
-    ["magnitude"] = 0.95,
-    ["tamanho"] = 0.4,
+	["intensidade"] = 0.4,
+	["magnitude"] = 0.95,
+	["tamanho"] = 0.4,
 }
 
 local blur = {
-    ["tamanho"] = 0.4,
+	["tamanho"] = 0.4,
 }
 
 local color_boost = {
-    ["saturação"] = 0.2,
-    ["constrate"] = 0,
-    ["claridade"] = 0,
+	["saturação"] = 0.2,
+	["constrate"] = 0,
+	["claridade"] = 0,
 }
-
 local function x(b)
 	for i,v in pairs(game.Lighting:GetDescendants()) do
 		if v:IsA(b) then
@@ -52,10 +51,10 @@ local s_sunray = variaveis.raios_de_sol
 if s_atmosfera == true then
 	x("Atmosphere")
 	local a = Instance.new("Atmosphere")
-	a.Density = s_atmosfera.densidade
+	a.Density = atmosfera.densidade
 	a.Parent = l
 end
-	if s_bloom then
+if s_bloom then
 	x("BloomEffect")
 	local v = Instance.new("BloomEffect")
 	v.Intensity = bloom.intensidade
@@ -71,7 +70,7 @@ if s_blur then
 	b.Parent = l
 end
 
-if s_color_boost then
+if s_colorboost then
 	x("ColorCorrectionEffect")
 	local c = Instance.new("ColorCorrectionEffect")
 	c.Contrast = color_boost.constrate
@@ -86,7 +85,7 @@ if s_ceu then
 	attain_heaven.Parent = l
 end
 
-if s_raios_de_sol then
+if s_sunray then
 	x("SunraysEffect")
 	local n = Instance.new("SunRaysEffect")
 	n.Intensity = raios.intensidade
