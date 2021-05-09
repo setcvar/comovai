@@ -13,7 +13,7 @@ local variaveis = {
 }
 
 local raios = {
-	["intensidade"] = 0.2,
+	["intensidade"] = 0.1,
 	["espalhar"] = 0.6, 
 }
 
