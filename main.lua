@@ -1,7 +1,7 @@
 local l = game.Lighting
 
-l.EnvironmentDiffuseScale = 0.25
-l.EnvironmentSpecularScale = 0.25
+l.EnvironmentDiffuseScale = 0.2
+l.EnvironmentSpecularScale = 1
 
 local variaveis = {
 	["ceu"] = true,
