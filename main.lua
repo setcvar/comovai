@@ -36,6 +36,8 @@ local color_boost = {
 	["constrate"] = 0,
 	["claridade"] = 0,
 }
+
+-- x("nome do efeito") || exemplo: x("ColorCorrection")
 local function x(b)
 	for i,v in pairs(game.Lighting:GetDescendants()) do
 		if v:IsA(b) then
