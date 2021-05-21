@@ -1,7 +1,9 @@
 local l = game.Lighting
 
-l.EnvironmentDiffuseScale = 0.2
-l.EnvironmentSpecularScale = .6
+if l.EnvironmentDiffuseScale then
+	l.EnvironmentDiffuseScale = 0.2
+	l.EnvironmentSpecularScale = .6
+end
 
 workspace.Terrain.WaterReflectance = 0.2
 workspace.Terrain.WaterTransparency = 1
