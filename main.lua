@@ -1,6 +1,6 @@
 local l = game.Lighting
 
-if l.EnvironmentDiffuseScale then
+if getgenv().environment == true then
 	l.EnvironmentDiffuseScale = 0.2
 	l.EnvironmentSpecularScale = .6
 end
