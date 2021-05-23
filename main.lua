@@ -8,7 +8,6 @@ end
 workspace.Terrain.WaterReflectance = 0.2
 workspace.Terrain.WaterTransparency = 1
 workspace.Terrain.WaterWaveSize = 0.15
-workspace.Terrain.WaveSpeed = 10
 
 local variaveis = {
 	["ceu"] = true,
