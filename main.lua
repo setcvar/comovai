@@ -11,6 +11,7 @@ if err then end
 workspace.Terrain.WaterReflectance = 0.2
 workspace.Terrain.WaterTransparency = 1
 workspace.Terrain.WaterWaveSize = 0.15
+l.Brightness = 3
 
 local variaveis = {
 	["ceu"] = true,
