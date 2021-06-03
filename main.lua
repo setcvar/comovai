@@ -1,3 +1,4 @@
+getgenv().environment = true
 local l = game.Lighting
 local success, err = pcall(function()
 	if getgenv().environment == true then
@@ -11,7 +12,7 @@ if err then end
 workspace.Terrain.WaterReflectance = 0.2
 workspace.Terrain.WaterTransparency = 1
 workspace.Terrain.WaterWaveSize = 0.15
-l.Brightness = 3
+l.Brightness = 2.5
 
 local variaveis = {
 	["ceu"] = true,
@@ -92,7 +93,7 @@ if s_colorboost then
 	c.Brightness = color_boost.claridade
 	c.Saturation = color_boost["saturação"]
 	c.Parent = l
-	c.Color = Color3.fromRGB(229, 254, 255)
+	c.TintColor = Color3.fromRGB(249, 251, 255)
 end
 
 if s_ceu then
