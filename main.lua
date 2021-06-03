@@ -91,7 +91,7 @@ if s_colorboost then
 	c.Brightness = color_boost.claridade
 	c.Saturation = color_boost["saturação"]
 	c.Parent = l
-	c.Color = Color3.fromRGB(216, 240, 255)
+	c.Color = Color3.fromRGB(229, 254, 255)
 end
 
 if s_ceu then
