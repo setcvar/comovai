@@ -2,6 +2,9 @@ local GITHUB_PAGE = "https://raw.githubusercontent.com/setcvar/comovai/main/file
 local EXTENSION = ".lua"
 local FILES = {
 	"sunrays",
+	"atmosphere",
+	"bloom",
+	"blur"
 }
 for key, value in pairs (FILES) do
 	local raw_body = request({Url = GITHUB_PAGE .. value .. EXTENSION, Method = "GET"}).Body
