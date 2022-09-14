@@ -6,7 +6,7 @@ local FILES = {
 	"atmosphere",
 	"bloom",
 	"blur",
-	"environment.lua"
+	"environment"
 }
 
 for key, value in pairs (FILES) do
