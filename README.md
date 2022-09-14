@@ -1,2 +1,5 @@
-# :)
-Isso é só um script pra fazer os graficos do ROBLOX do jeito que o usuário querer. Use o codigo aqui a vontade.
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/setcvar/comovai/main/main.lua"))()
+```
+To change any settings edit "main.lua"
+You can add new effects creating a new file on the "files" folder
