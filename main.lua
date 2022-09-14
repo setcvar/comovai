@@ -5,7 +5,6 @@ local FILES = {
 	"sunrays",
 	"atmosphere",
 	"bloom",
-	"blur",
 	"environment"
 }
 
