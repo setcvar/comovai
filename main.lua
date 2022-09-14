@@ -4,6 +4,6 @@ local FILES = {
 }
 for key, value in pairs (FILES) do
 	local raw_body = request({Url = GITHUB_PAGE..key..".lua", Method = "GET"}).Body
-	local func = loadstring(raw_body)()
-	func()
+	local file = loadstring(raw_body)()
+	file.load()
 end
