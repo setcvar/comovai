@@ -1,5 +1,5 @@
 return {
-   ["load"] = function()
+   function()
       print("Hello, world!")
    end
 }
