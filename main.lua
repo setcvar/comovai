@@ -5,7 +5,8 @@ local FILES = {
 	"sunrays",
 	"atmosphere",
 	"bloom",
-	"environment"
+	"environment",
+	"future"
 }
 
 for key, value in pairs (FILES) do
